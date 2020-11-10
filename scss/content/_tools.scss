@@ -1,0 +1,32 @@
+.tools {
+   .grid {
+      text-align: center;
+      margin-top: 8rem;
+
+      @media screen and (max-width: 768px) {
+         grid-template-columns: 1fr;
+      }
+   }
+
+   .tool:nth-child(2) {
+      @media screen and (max-width: 768px) {
+         margin: 4rem 0;
+      }
+   }
+
+   .tool-header {
+      height: 10rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   .tool-icon {
+      align-self: center;
+   }
+
+   .tool-description {
+      margin-top: 2rem;
+      font-size: 1.6rem;
+   }
+}

@@ -1,0 +1,80 @@
+.footer {
+   background-color: lighten($grayish-blue, 30%);
+   padding: 4rem 0;
+
+   .grid-3 {
+      grid-template-columns: 15rem 2fr 1fr;
+      gap: 5rem;
+
+      @media screen and (max-width: 992px) {
+         grid-template-columns: 1fr;
+         justify-items: center;
+      }
+   }
+
+   .footer-logo {
+      img {
+         display: block;
+         width: 5rem;
+      }
+   }
+
+   .footer-nav {
+      display: grid;
+      grid-template-columns: repeat(3, max-content);
+      gap: 7rem;
+
+      @media screen and (max-width: 768px) {
+         grid-template-columns: 1fr;
+         gap: 0;
+      }
+
+      li {
+         @media screen and (max-width: 768px) {
+            text-align: center;
+         }
+      }
+
+      a {
+         display: inline-block;
+         color: $dark-grayish-blue;
+         font-size: 1.7rem;
+         margin-bottom: 1rem;
+
+         &:hover {
+            color: $strong-cyan;
+            transition: 0.2s ease;
+         }
+
+         @media screen and (max-width: 992px) {
+            margin-bottom: 2rem;
+         }
+
+         @media screen and (max-width: 400px) {
+            font-size: 1.6rem;
+         }
+      }
+   }
+
+   .social {
+      justify-self: end;
+      align-self: center;
+      display: flex;
+
+      @media screen and (max-width: 992px) {
+         justify-self: center;
+      }
+
+      .social-media-icon {
+         &:hover .fab {
+            color: $strong-cyan;
+            transition: 0.2s ease;
+         }
+
+         .fab {
+            font-size: 2.5rem;
+            color: $dark-grayish-blue;
+         }
+      }
+   }
+}

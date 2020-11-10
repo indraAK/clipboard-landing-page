@@ -1,0 +1,15 @@
+.partners {
+   padding: 15rem 0 10rem;
+
+   .flex {
+      width: 100%;
+      flex-wrap: wrap;
+
+      .partner-logo {
+         display: block;
+         max-width: 100%;
+         width: 12.5rem;
+         margin: 0 3rem 5rem;
+      }
+   }
+}

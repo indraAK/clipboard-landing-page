@@ -1,0 +1,12 @@
+.download {
+   padding-bottom: 17rem;
+
+   .intro-text {
+      h1 {
+         @media screen and (max-width: 400px) {
+            max-width: 30rem;
+            margin: 0 auto 2rem;
+         }
+      }
+   }
+}

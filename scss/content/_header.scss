@@ -1,0 +1,28 @@
+.showcase {
+   height: 100vh;
+   background-image: url("../../images/bg-header-desktop.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+
+   .logo {
+      width: 10rem;
+   }
+
+   .intro-text {
+      margin: 3rem auto 4rem;
+   }
+
+   h1 {
+      color: $dark-grayish-blue;
+      font-weight: $font-weight-bold;
+
+      @media screen and (max-width: 400px) {
+         font-size: 3rem;
+      }
+   }
+
+   p {
+      color: $grayish-blue;
+   }
+}
